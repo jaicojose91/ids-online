@@ -8,6 +8,8 @@ library(MASS)
 library(stats)
 View(Aids2)
 
+colnames(Aids2)
+
 detach(package:MASS)
 detach(package:stats)
 View(Aids2)
@@ -17,7 +19,8 @@ library(MASS)
 
 remove.packages("stats")
 
-View(Aids2)
+library(MASS)
+
 
 install.packages("KernSmooth")
 library(KernSmooth)
